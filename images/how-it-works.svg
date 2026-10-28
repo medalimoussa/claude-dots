@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">How claude-dots works</title>
+  <desc id="desc">Each Claude Code session keeps a status file in ~/.claude/sessions. The dotsd watcher reads these files once a second, read-only, and follows the focused window with xprop. It writes one line to $XDG_RUNTIME_DIR/dots/line, which the MATE Command applet prints every second through the dots script.</desc>
+  <rect x="0.5" y="0.5" width="759" height="519" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13">
+    <text x="28" y="36" font-size="15" font-weight="600" fill="#1f2328">How it works</text>
+
+    <g fill="#f6f8fa" stroke="#d0d7de">
+      <rect x="40" y="60" width="340" height="50" rx="8"/>
+      <rect x="40" y="156" width="340" height="50" rx="8"/>
+      <rect x="40" y="252" width="340" height="50" rx="8"/>
+      <rect x="40" y="348" width="340" height="50" rx="8"/>
+      <rect x="40" y="444" width="340" height="50" rx="8"/>
+      <rect x="440" y="252" width="280" height="50" rx="8"/>
+    </g>
+
+    <g fill="#1f2328" font-weight="600">
+      <text x="56" y="81">Claude Code sessions</text>
+      <text x="56" y="465">MATE panel · Command applet</text>
+      <text x="456" y="273">Focused window (X11)</text>
+    </g>
+    <g fill="#1f2328" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+      <text x="56" y="177">~/.claude/sessions/&lt;pid&gt;.json</text>
+      <text x="56" y="273">dotsd.py</text>
+      <text x="56" y="369">$XDG_RUNTIME_DIR/dots/line</text>
+    </g>
+    <g fill="#59636e">
+      <text x="56" y="99">one per VS Code window</text>
+      <text x="56" y="195">written by Claude Code: busy · waiting · idle</text>
+      <text x="56" y="291">background watcher</text>
+      <text x="56" y="387">the current line, kept in RAM</text>
+      <text x="56" y="483">runs dots every second</text>
+      <text x="456" y="291">xprop -spy: has a result been seen?</text>
+      <text x="400" y="176">Only the *.json files are read: never the</text>
+      <text x="400" y="194">*.key files, transcripts or sockets.</text>
+    </g>
+
+    <g stroke="#8c959f" stroke-width="1.5">
+      <line x1="210" y1="114" x2="210" y2="145"/>
+      <line x1="210" y1="210" x2="210" y2="241"/>
+      <line x1="210" y1="306" x2="210" y2="337"/>
+      <line x1="210" y1="402" x2="210" y2="433"/>
+      <line x1="436" y1="277" x2="391" y2="277"/>
+    </g>
+    <g fill="#8c959f">
+      <path d="M210 151 L205.5 143 L214.5 143 z"/>
+      <path d="M210 247 L205.5 239 L214.5 239 z"/>
+      <path d="M210 343 L205.5 335 L214.5 335 z"/>
+      <path d="M210 439 L205.5 431 L214.5 431 z"/>
+      <path d="M385 277 L393 272.5 L393 281.5 z"/>
+    </g>
+    <g fill="#59636e">
+      <text x="224" y="137">each session keeps its own file up to date</text>
+      <text x="224" y="233">read-only, once a second</text>
+      <text x="224" y="329">written when something changes</text>
+      <text x="224" y="425">printed by dots, which also restarts dotsd if needed</text>
+    </g>
+
+    <g fill="#1f2328" stroke="#1f2328" stroke-width="1.6">
+      <circle cx="294" cy="469" r="4.5" fill="#f6f8fa"/>
+      <path d="M314 462.5 L320.5 469 L314 475.5 L307.5 469 z" stroke="none"/>
+      <circle cx="334" cy="469" r="3.2" stroke="none"/>
+      <path d="M354 462.5 L360.5 469 L354 475.5 L347.5 469 z" fill="#f6f8fa"/>
+    </g>
+  </g>
+</svg>

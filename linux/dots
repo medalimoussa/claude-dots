@@ -1,0 +1,8 @@
+#!/bin/sh
+# Run every second by the MATE "Command" panel applet: prints the line kept up to
+# date by dotsd, and restarts dotsd when it isn't running (builtins + cat only).
+run="${XDG_RUNTIME_DIR:-/tmp}/dots"
+comm=
+{ read -r pid < "$run/pid" && read -r comm < "/proc/$pid/comm"; } 2>/dev/null
+[ "$comm" = dotsd ] || setsid -f /usr/bin/python3 "${0%/*}/dotsd.py" </dev/null >/dev/null 2>&1
+cat "$run/line" 2>/dev/null || printf '[Command]\nOutput=…\n'

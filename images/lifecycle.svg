@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="196" viewBox="0 0 880 196" role="img" aria-labelledby="title desc">
+  <title id="title">The life of one dot</title>
+  <desc id="desc">A finished, seen session turns working when you send a prompt, waiting for you when it needs a permission or an answer, working again once you answer, finished and not seen yet when the turn ends, and finished and seen once you focus its window.</desc>
+  <rect x="0.5" y="0.5" width="879" height="195" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="28" y="36" font-size="15" font-weight="600" fill="#1f2328">The life of one dot</text>
+
+    <g stroke="#8c959f" stroke-width="1.5">
+      <line x1="98" y1="112" x2="198" y2="112"/>
+      <line x1="242" y1="112" x2="342" y2="112"/>
+      <line x1="388" y1="112" x2="486" y2="112"/>
+      <line x1="530" y1="112" x2="630" y2="112"/>
+      <line x1="676" y1="112" x2="776" y2="112"/>
+    </g>
+    <g fill="#8c959f">
+      <path d="M204 112 L196 107.5 L196 116.5 z"/>
+      <path d="M348 112 L340 107.5 L340 116.5 z"/>
+      <path d="M492 112 L484 107.5 L484 116.5 z"/>
+      <path d="M636 112 L628 107.5 L628 116.5 z"/>
+      <path d="M782 112 L774 107.5 L774 116.5 z"/>
+    </g>
+
+    <g font-size="13" fill="#59636e" text-anchor="middle">
+      <text x="152" y="84">you send</text><text x="152" y="100">a prompt</text>
+      <text x="296" y="84">permission</text><text x="296" y="100">or question</text>
+      <text x="440" y="100">you answer</text>
+      <text x="584" y="84">the turn</text><text x="584" y="100">ends</text>
+      <text x="728" y="84">you focus</text><text x="728" y="100">its window</text>
+    </g>
+
+    <g fill="#1f2328" stroke="#1f2328" stroke-width="2">
+      <circle cx="80" cy="112" r="5" stroke="none"/>
+      <circle cx="224" cy="112" r="7" fill="#ffffff"/>
+      <path d="M368 101 L379 112 L368 123 L357 112 z" fill="#ffffff"/>
+      <circle cx="512" cy="112" r="7" fill="#ffffff"/>
+      <path d="M656 101 L667 112 L656 123 L645 112 z" stroke="none"/>
+      <circle cx="800" cy="112" r="5" stroke="none"/>
+    </g>
+
+    <g font-size="13" fill="#1f2328" text-anchor="middle">
+      <text x="80" y="148">finished,</text><text x="80" y="165">seen</text>
+      <text x="224" y="148">working</text>
+      <text x="368" y="148" font-weight="600">waiting</text><text x="368" y="165" font-weight="600">for you</text>
+      <text x="512" y="148">working</text>
+      <text x="656" y="148" font-weight="600">finished,</text><text x="656" y="165" font-weight="600">not seen yet</text>
+      <text x="800" y="148">finished,</text><text x="800" y="165">seen</text>
+    </g>
+  </g>
+</svg>
